@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const artistasContainer = document.querySelector(".artistas-container");
     const artistas = document.querySelectorAll(".artista");
     const container = document.querySelector(".container");
+    const artistasContainer = document.querySelector(".artistas-container"); // Adicionado
 
     function checkScroll() {
         const triggerBottom = window.innerHeight * 0.8;
-        const containerTop = artistasContainer.getBoundingClientRect().top;
+        const containerTop = artistasContainer ? artistasContainer.getBoundingClientRect().top : 0;
 
         if (containerTop < triggerBottom) {
             artistasContainer.style.opacity = "1";
@@ -28,4 +28,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ativa o efeito de rolagem para os artistas
     checkScroll();
     window.addEventListener("scroll", checkScroll);
-});
+})
+    
