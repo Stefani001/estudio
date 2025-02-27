@@ -35,11 +35,15 @@
         <section id="portfolio">
             <h2>🎨 Portfólio</h2>
             <div class="portfolio ">
-                <img src="img/Z1.jpg" alt="Tatuagem 1">
-                <img src="img/Z2.jpg" alt="Tatuagem 2">
-                <img src="img/Z3.jpg" alt="Tatuagem 3">
+                <img src="img/Z1.jpg" alt="Tatuagem 1" class="portifolio img" onclick="openLightbox('img/Z1.jpg')" >
+                <img src="img/Z2.jpg" alt="Tatuagem 2"class="portifolio img" onclick="openLightbox('img/Z2.jpg')">
+                <img src="img/Z3.jpg" alt="Tatuagem 3"class="portifolio img" onclick="openLightbox('img/Z3.jpg')">
             </div>
         </section>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox img" class="lightbox-img">
+        </div>
 
         <!-- Botão para voltar -->
         <a href="index.html" class="btn-voltar">⬅ Voltar</a>

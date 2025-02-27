@@ -22,7 +22,7 @@
         <div class="opcoes">
             <a href="#premiacoes" class="opcao">🏆 Premiações</a>
             <a href="#portfolio" class="opcao">🎨 Portfólio</a>
-            <a href="https://wa.me/SEUNUMERO" target="_blank" class="opcao">📞 Contato</a>
+            <a href="https://wa.me/559892255166?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!%0A" target="_blank" class="opcao">📞 Contato</a>
         </div>
 
         <!-- Seção de Premiações -->
@@ -35,15 +35,21 @@
         <section id="portfolio">
             <h2>🎨 Portfólio</h2>
             <div class="portfolio ">
-                <img src="img/tatuagem1.jpg" alt="Tatuagem 1">
+                <img src="img/tatuagem1.jpg" alt="Tatuagem 1" class="portifolio img" onclick="openLightbox('img/tatuagem1.jpg')">
                 <img src="img/tatuagem2.jpg" alt="Tatuagem 2">
                 <img src="img/tatuagem3.jpg" alt="Tatuagem 3">
             </div>
         </section>
+        <!--Lightbox-->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox img" class="lightbox-img">
+        </div>
 
         <!-- Botão para voltar -->
         <a href="index.html" class="btn-voltar">⬅ Voltar</a>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>

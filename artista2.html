@@ -33,13 +33,18 @@
 
         <!-- Seção de Portfólio -->
         <section id="portfolio">
-            <h2>🎨 Portfólio</h2>
+            <h2>🎨 Portfólio</h2> 
             <div class="portfolio ">
-                <img src="img/L1.jpg" alt="Tatuagem 1">
-                <img src="img/L2.jpg" alt="Tatuagem 2">
-                <img src="img/L3.jpg" alt="Tatuagem 3">
+                <img src="img/L1.jpg" alt="Tatuagem 1" class="portifolio img" onclick="openLightbox('img/L1.jpg')">
+                <img src="img/L2.jpg" alt="Tatuagem 2" class="portifolio img" onclick="openLightbox('img/L2.jpg')">
+                <img src="img/L3.jpg" alt="Tatuagem 3" class="portifolio img" onclick="openLightbox('img/L3.jpg')">
             </div>
         </section>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox img" class="lightbox-img">
+        </div>
+
 
         <!-- Botão para voltar -->
         <a href="index.html" class="btn-voltar">⬅ Voltar</a>
